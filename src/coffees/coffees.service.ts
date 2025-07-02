@@ -22,8 +22,8 @@ export class CoffeesService {
       relations: {
         flavors: true,
       },
-      skip: offset, // 👈
-      take: limit, // 👈
+      skip: offset,
+      take: limit,
     });
   }
 
