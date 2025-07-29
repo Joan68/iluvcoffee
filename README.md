@@ -1,3 +1,32 @@
+<h1>NestJS Fundamentals Course</h1>
+
+<p>Welcome! 👋 This repository contains my personal code as I follow the <strong>NestJS Fundamentals Course</strong>.</p>
+
+<h2>🚀 About the Project</h2>
+
+<p>I'm currently learning <strong>NestJS</strong>, a progressive Node.js framework for building efficient and scalable server-side applications. This repository tracks my progress through the official <strong>NestJS Fundamentals Course</strong>.</p>
+
+<h2>🎯 Why This Course?</h2>
+
+<p>I'm following this course to:</p>
+<ul>
+  <li>Explore and deepen my understanding of <strong>modern backend technologies</strong></li>
+  <li>Get hands-on experience with <strong>NestJS</strong>, TypeScript, and related tools</li>
+  <li>Work toward earning the <strong>NestJS Certification</strong></li>
+  <li>Stay up to date with <strong>promising and in-demand technologies</strong></li>
+</ul>
+
+<h2>🧠 Topics Covered</h2>
+
+<p>As I progress through the course, I’ll cover topics such as:</p>
+<ul>
+  <li>NestJS architecture and core principles</li>
+  <li>Dependency injection</li>
+  <li>Modules, controllers, and services</li>
+  <li>Exception handling and validation</li>
+  <li>Testing and more</li>
+</ul>
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
