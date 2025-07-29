@@ -8,7 +8,6 @@ import {
   Patch,
   Post,
   Query,
-  SetMetadata,
   ValidationPipe,
 } from '@nestjs/common';
 import { CoffeesService } from './coffees.service';
@@ -18,7 +17,9 @@ import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto/paginati
 import { REQUEST } from '@nestjs/core';
 import { Public } from 'src/common/decorators/public.decorator';
 import { ParseIntPipe } from 'src/common/pipes/parse-int/parse-int.pipe';
+import { ApiForbiddenResponse, ApiResponse, ApiTags } from '@nestjs/swagger';
 
+@ApiTags('coffees')
 @Controller('coffees')
 export class CoffeesController {
   constructor(
@@ -26,12 +27,14 @@ export class CoffeesController {
     @Inject(REQUEST) private readonly request: Request,
   ) {}
 
+  @ApiResponse({ status: 403, description: 'Forbidden.' })
   @Public()
   @Get()
   async findAll(@Query() paginationQuery: PaginationQueryDto) {
     return this.coffeesService.findAll(paginationQuery);
   }
 
+  @ApiForbiddenResponse({ description: 'Forbidden.' })
   @Get(':id')
   findOne(@Param('id', ParseIntPipe) id: number) {
     return this.coffeesService.findOne('' + id);
